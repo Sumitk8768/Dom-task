@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    background-color: antiquewhite;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        margin: 6rem auto 3rem;
+        text-transform: u;
+    }
+
+    .piano-container {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8rem;
+        padding-top: 0;
+
+        .piano-heaader {
+            background-color: rgb(44, 43, 43);
+            width: 100%;
+            height: 100px;
+            color: #fff;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px 15px 0 0;
+            text-transform: uppercase;
+        }
+
+        .piano-keys {
+            width: fit-content;
+            display: flex;
+            display: flex;
+       .keys{
+        position: relative;
+        display: flex;
+       }
+            .white {
+                display: grid;
+                grid-template-columns: minmax(1fr, 21);
+                align-items: end;
+                justify-content: center;
+                padding: 1em;
+                // width: ;
+                border: 1px solid black;
+                height: 200px;
+                border-radius: 0 0 10px 10px;
+                background-color: white;
+            }
+
+            .white:hover {
+                background-color: #DCDCDC;
+                cursor: pointer;
+                transition: all 0.5s ease;
+            }
+
+            .white:active {
+                background-color: #DCDCDC;
+                cursor: pointer;
+                transition: all 0.5s ease-in-out;
+                
+            }
+
+        .black {
+            width: 35px;
+            height: 120px;
+            border-radius: 0 0 10px 10px;
+            padding: 1rem;
+            background: black;
+            color: white;
+            position: absolute;
+            top: 0;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            font-size: 12px;
+            z-index: 2;
+
+           
+        }
+        .black:hover{
+            background-color: #313131;
+            cursor: pointer;
+        }
+        .black:active{
+            transition: all 0.5s ease-in-out;
+            top: 3px;
+        }
+        .C-Sharp{
+               left: 25px;
+          }
+        .D-Sharp{
+            left: 70px;
+        }
+        .F-Sharp{
+               left: 155px;
+          }
+        .G-Sharp{
+            left: 200px;
+        }
+        .A-Sharp{
+               left: 245px;
+          }
+       
+
+        }
+
+        
+
+    }
+
+
+
+
+}
